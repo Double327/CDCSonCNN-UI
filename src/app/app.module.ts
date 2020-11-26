@@ -1,13 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+/**
+ * Module
+ */
+import {AppRoutingModule} from './app-routing.module';
+
+/**
+ * Components
+ */
+import {AppComponent} from './app.component';
+
+/**
+ * Service
+ */
 import {RequestService} from './service/request.service';
+import {LoginComponent} from './views/login/login.component';
+import {DashboardComponent} from './views/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -16,4 +31,5 @@ import {RequestService} from './service/request.service';
   providers: [RequestService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
