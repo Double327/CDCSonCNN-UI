@@ -1,0 +1,31 @@
+.main_title{
+	background-color: rgb(128,30,31);
+    height: 80px;
+
+    .logo{
+        padding-left: 30px;
+        padding-top: 10px;
+        float: left;
+        img{
+            width: 80%;
+        }
+    }
+
+    .logo_title{
+        font-size: white;
+        float: left;
+        color: white;
+        font-size: 30px;
+        padding-top: 17px;
+    }
+
+    .user_function{
+        float: right;
+        padding-top: 5px;
+        padding-right: 50px;
+
+        .img-circle{
+            cursor: pointer;
+        }
+    }
+}
