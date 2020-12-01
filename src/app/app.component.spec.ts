@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'CDCSonCNN-UI'`, () => {
+  it(`should have as title 'dc-a11'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('CDCSonCNN-UI');
+    expect(app.title).toEqual('dc-a11');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('CDCSonCNN-UI app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('dc-a11 app is running!');
   });
 });

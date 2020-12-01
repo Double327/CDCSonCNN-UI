@@ -3,14 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CDCSonCNN-UI": {
+    "dc-a11": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
         }
       },
       "root": "",
@@ -20,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CDCSonCNN-UI",
+            "outputPath": "dist/dc-a11",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -53,13 +50,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -68,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "CDCSonCNN-UI:build"
+            "browserTarget": "dc-a11:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "CDCSonCNN-UI:build:production"
+              "browserTarget": "dc-a11:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CDCSonCNN-UI:build"
+            "browserTarget": "dc-a11:build"
           }
         },
         "test": {
@@ -116,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "CDCSonCNN-UI:serve"
+            "devServerTarget": "dc-a11:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "CDCSonCNN-UI:serve:production"
+              "devServerTarget": "dc-a11:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "CDCSonCNN-UI"
+  "defaultProject": "dc-a11"
 }
