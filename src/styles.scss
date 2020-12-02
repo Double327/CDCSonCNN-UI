@@ -1,27 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    min-width: 999px;
+body {
+  min-width: 999px;
 }
-.sider{
-    float: left;
-    color: purple;
-    width: 500px;
-    border-right: 1px purple solid;
-    height: 500px;
+
+.sider {
+  float: left;
+  color: purple;
+  width: 500px;
+  border-right: 1px purple solid;
+  height: 500px;
 }
-.detial{
-    float: left;
-    height: 500px;
+
+.detial {
+  float: left;
+  height: 500px;
 
 }
-.body:after{
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: "";
-	clear: both;
-	height: 0;
+
+.body:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
 }
-ul li{
-    list-style-type: none;
+
+ul li {
+  list-style-type: none;
 }
